@@ -20,6 +20,6 @@ In the file pngoutRecursive.php, there is 2 global variables :
 
 
 ============================
-HOW TO START optimizePng
+HOW TO START
 ============================
-php optimizePng.php
+php pngoutRecursive.php
