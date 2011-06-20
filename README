@@ -1,0 +1,25 @@
+The script php use the program pngout to reduce the size of all image without quality loss(http://advsys.net/ken/utils.htm) from the directory and sub-directories of the specified folder ($dir).
+
+============================
+HOW TO USE THE SCRIPT
+============================
+In the file pngoutRecursive.php, there is 2 global variables :
+
+- $dir: the directory where are the image to reduce (without slash at the end !!)
+
+  Example:
+  $dir = '/var/www/web/images'
+
+- $pngoutDir : the directory where the executable of pngout can be found
+
+  The program use by default the i386 version of pngout so if you are not on a i386 processor, you must change the path of pngoutDir.
+
+  Example : 
+  If you are on 64bit processor, you must put the following $pngoutDir:
+  $pngoutDir = './pngout-20110415-linux/x86_64/pngout';
+
+
+============================
+HOW TO START optimizePng
+============================
+php optimizePng.php
